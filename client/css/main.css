@@ -241,7 +241,7 @@ footer, header, hgroup, menu, nav, section {
     #instructions {position:absolute;top:50%;left:50%;z-index:1000;font-family:'GraphicPixel';pointer-events:none;opacity:0;-moz-transition:0.25s opacity linear;-webkit-transition:0.4s top ease, 0.4s opacity linear;-o-transition:0.4s top ease, 0.4s opacity linear;-ms-transition:0.4s top ease, 0.4s opacity linear;transition:0.4s top ease, 0.4s opacity linear;}
     #instructions.active, #achievements.active {opacity:1;pointer-events:auto;}
     
-    #weapon, #armor {image-rendering:-moz-crisp-edges;}
+    #weapon, #armor, #levelbutton {image-rendering:-moz-crisp-edges;}
 
     #achievements, #achievements li, .coin, #achievement-notification, #coinsparks, .achievement-sharing a, #previous, #next {background:url('../img/1/achievements.png');image-rendering:-moz-crisp-edges;}
     #achievements {font-family:'GraphicPixel'; position:absolute;top:50%;left:50%;z-index:1000;opacity:0;pointer-events:none;-moz-transition:0.25s opacity linear;-webkit-transition:0.4s top ease, 0.4s opacity linear;-o-transition:0.4s top ease, 0.4s opacity linear;-ms-transition:0.4s top ease, 0.4s opacity linear;transition:0.4s top ease, 0.4s opacity linear;}
@@ -609,8 +609,13 @@ footer, header, hgroup, menu, nav, section {
         #armor, #weapon {width:48px;height:48px;position:absolute;background-size:288px;background-position:-96px;}
         #weapon {left:312px;top:3px;background-size:288px;}
         #armor {left:363px;top:3px;}
+        
+        #levelbutton {left:417px;top:3px;background-position:-906px -51px;}
+        #levelbutton:hover, #levelbutton.blink:hover {background-position:-948px -51px;}
+        #levelbutton.blink {background-position:-1032px -51px;}
+        #levelbutton.active {background-position:-990px -51px;}
 
-        #notifications {width:588px;margin-left:-294px;font-size:20px;color:#eee;top:6px;height:45px;}
+        #notifications {width:550px;margin-left:-252px;font-size:20px;color:#eee;top:6px;height:45px;}
         #notifications div.top {top:-45px;}
         #notifications span {line-height:45px;height:45px;}
 
@@ -790,7 +795,12 @@ footer, header, hgroup, menu, nav, section {
         #weapon {left:208px;top:2px;}
         #armor {left:242px;top:2px;}
 
-        #notifications {width:392px;margin-left:-196px;font-size:16px;color:#eee;top:2px;height:30px;}
+        #levelbutton {left:278px;top:2px;background-position:-604px -34px;}
+        #levelbutton:hover, #levelbutton.blink:hover {background-position:-632px -34px;}
+        #levelbutton.blink {background-position:-688px -34px;}
+        #levelbutton.active {background-position:-660px -34px;}
+
+        #notifications {width:368px;margin-left:-170px;font-size:16px;color:#eee;top:2px;height:30px;}
         #notifications div.top {top:-30px;}
         #notifications span {line-height:30px;height:30px;}
         .windows #notifications span {line-height:34px;}
@@ -973,7 +983,12 @@ footer, header, hgroup, menu, nav, section {
         #weapon {left:104px;top:1px;}
         #armor {left:121px;top:1px;}
 
-        #notifications {width:196px;margin-left:-98px;font-size:10px;color:#eee;top:2px;height:15px;}
+        #levelbutton {left:138px;top:1px;background-position:-302px -17px;}
+        #levelbutton:hover, #levelbutton.blink:hover {background-position:-316px -17px;}
+        #levelbutton.blink {background-position:-344px -17px;}
+        #levelbutton.active {background-position:-330px -17px;}
+
+        #notifications {width:182px;margin-left:-84px;font-size:10px;color:#eee;top:2px;height:15px;}
         #notifications div.top {top:-15px;}
         #notifications span {line-height:15px;height:15px;}
 
@@ -1143,6 +1158,15 @@ footer, header, hgroup, menu, nav, section {
         #armor {left:242px;top:2px;}
 
         #notifications {display:none;}
+
+        /* TO DO: *** Figure out where to display level button on mobile / small screens ***/
+        #levelbutton {display:none;}
+        /*
+        #levelbutton {left:138px;top:1px;background-position:-302px -17px;}
+        #levelbutton:hover, #levelbutton.blink:hover {background-position:-316px -17px;}
+        #levelbutton.blink {background-position:-344px -17px;}
+        #levelbutton.active {background-position:-330px -17px;}
+        */
 
         #playercount {font-size:20px;left:270px;top:10px;width:114px;text-align:center;}
         #playercount span {display:none;}
